@@ -59,8 +59,8 @@ shopt -s cmdhist
 PROMPT_COMMAND='history -a'
 
 # Huge history. Doesn't appear to slow things down, so why not?
-HISTSIZE=500000
-HISTFILESIZE=100000
+HISTSIZE=1000000
+HISTFILESIZE=200000000
 
 # Avoid duplicate entries
 HISTCONTROL="erasedups:ignoreboth"
@@ -92,7 +92,7 @@ shopt -s cdspell 2> /dev/null
 # This defines where cd looks for targets
 # Add the directories you want to have fast access to, separated by colon
 # Ex: CDPATH=".:~:~/projects" will look for targets in the current working directory, in home and in the ~/projects folder
-CDPATH="."
+CDPATH=".:~:~/projects"
 
 # This allows you to bookmark your favorite places across the file system
 # Define a variable containing a path and you will be able to cd into it regardless of the directory you're in
@@ -103,4 +103,3 @@ shopt -s cdable_vars
 # export projects="$HOME/projects"
 # export documents="$HOME/Documents"
 # export dropbox="$HOME/Dropbox"
-
